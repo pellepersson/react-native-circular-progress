@@ -48,8 +48,9 @@ export default class AnimatedCircularProgress extends React.Component {
     return (
       <AnimatedProgress
         {...other}
-        fill={this.state.chartFillAnimation}
-        />
+        animationValue={this.state.chartFillAnimation}
+        fade={this.props.fade}
+      />
     )
   }
 }
@@ -63,10 +64,12 @@ AnimatedCircularProgress.propTypes = {
   tintColor: PropTypes.string,
   backgroundColor: PropTypes.string,
   tension: PropTypes.number,
-  friction: PropTypes.number
+  friction: PropTypes.number,
+  fade: PropTypes.bool,
 }
 
 AnimatedCircularProgress.defaultProps = {
   tension: 7,
-  friction: 10
+  friction: 10,
+  fade: false,
 };
