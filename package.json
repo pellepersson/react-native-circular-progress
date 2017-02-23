@@ -27,6 +27,6 @@
   "homepage": "https://github.com/bgryszko/react-native-circular-progress",
   "dependencies": {
     "art": "0.10.0",
-    "react-native-svg": "4.4.0"
+    "react-native-svg": "5.1.5"
   }
 }
